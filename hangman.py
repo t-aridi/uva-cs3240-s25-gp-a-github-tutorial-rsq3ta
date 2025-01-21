@@ -3,13 +3,16 @@
 # This program plays the game Hangman.
 # Input a word, then guess the letters!
 
+
+#Tamer El Aridi (rsq3ta): The error is that when you give the program the word at the beginning, it reverses it.
+
+
 import random
 
 secretWord= input("Enter a word: ").lower()
 numberOfGuessesLeft= 5
 
 #Populates the hidden word string with correct number of "-"
-secretWord = secretWord[::-1]
 hiddenWord= "["
 for i in range(len(secretWord)):
     hiddenWord+="-"
